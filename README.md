@@ -11,15 +11,15 @@ TODO
 
 ## Options
 
-TODO
+正在努力开发中
 
 ## Development
 
 ```bash
-# install dependencies
+# 第一步下载依赖：install dependencies
 $ npm install
 
-# develop library by docs demo
+# 第二步启动项目：develop library by docs demo
 $ npm start
 
 # build library source code
