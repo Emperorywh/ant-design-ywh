@@ -3,7 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/ant-design-ywh.svg?style=flat)](https://npmjs.org/package/ant-design-ywh)
 [![NPM downloads](http://img.shields.io/npm/dm/ant-design-ywh.svg?style=flat)](https://npmjs.org/package/ant-design-ywh)
 
-A react library developed with dumi
+这是一个模仿 Ant Design 的一个UI组件库
 
 ## Usage
 
