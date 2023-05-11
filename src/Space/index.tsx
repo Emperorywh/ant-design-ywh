@@ -64,7 +64,6 @@ const Space: React.FC<SpaceProps> = (props) => {
     }
 
     const childrenNodeArray = React.Children.toArray(props.children);
-    console.log('childrenNodeArray', childrenNodeArray);
     const childrenNodeList = childrenNodeArray.map((child, index) => {
         return <SpaceItem key={index} childrenNode={child} index={index} lastIndex={childrenNodeArray.length - 1} split={props.split}></SpaceItem>
     });

@@ -20,9 +20,9 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*37T2R6O9oi0AAA
 ## 代码演示
 
 <!-- prettier-ignore -->
-<!-- <code src="./demo/base.tsx">基本用法</code> -->
+<code src="./demo/base.tsx">基本用法</code>
 <code src="./demo/split.tsx">分隔符</code>
-<!-- <code src="./demo/wrap.tsx">自动换行</code> -->
+<code src="./demo/wrap.tsx">自动换行</code>
 
 <!-- <code src="./demo/vertical.tsx">垂直间距</code>
 <code src="./demo/size.tsx">间距大小</code>
@@ -51,21 +51,6 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*37T2R6O9oi0AAA
 ### Size
 
 `'small' | 'middle' | 'large' | number`
-
-### Space.Compact
-
-> 自 antd@4.24.0 版本开始提供该组件。
-
-需要表单组件之间紧凑连接且合并边框时，使用 Space.Compact。支持的组件有：
-
-- Button
-- AutoComplete
-- Cascader
-- DatePicker
-- Input/Input.Search
-- Select
-- TimePicker
-- TreeSelect
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |

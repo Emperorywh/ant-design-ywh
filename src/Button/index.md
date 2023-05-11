@@ -38,7 +38,8 @@ group:
 
 <!-- prettier-ignore -->
 <code src="./demo/basic.tsx">按钮类型</code>
-<!-- <code src="./demo/icon.tsx">图标按钮</code>
+<code src="./demo/icon.tsx">图标按钮</code>
+<!-- 
 <code src="./demo/debug-icon.tsx" debug>调试图标按钮</code>
 <code src="./demo/debug-block.tsx" debug>调试按钮block属性</code>
 <code src="./demo/size.tsx">按钮尺寸</code>

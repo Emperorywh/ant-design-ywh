@@ -1,4 +1,5 @@
 import React from "react";
+import { prefixRootCls } from "../common";
 
 export interface SpaceItemProps {
     childrenNode: React.ReactNode,
@@ -8,16 +9,23 @@ export interface SpaceItemProps {
 }
 
 const SpaceItem: React.FC<SpaceItemProps> = (props) => {
+
+    const compClsName = 'space-item';
+    const prefixCls = `${prefixRootCls}-${compClsName}`;
+
     const {
         childrenNode,
         index,
         lastIndex,
         split
     } = props;
+
     return <>
-        {childrenNode}
+        <div className={`${prefixCls}-node`}>
+            {childrenNode}
+        </div>
         {
-            index < lastIndex && split
+            index < lastIndex && split && <span className={`${prefixCls}-split`}>{split}</span>
         }
     </>
 }

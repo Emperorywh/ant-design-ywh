@@ -1,0 +1,59 @@
+@import "../common.less";
+
+.ant-ywh-button {
+    font-size: 14px;
+    height: 32px;
+    padding: 4px 15px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    background-color: #FFF;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.88);
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.ant-ywh-button >.anticon + span {
+    margin-left: 8px;
+}
+
+.ant-ywh-button:hover {
+    color: @ant-primary-color;
+    border-color: @ant-primary-hover-color;
+}
+
+.ant-ywh-button-type-default {
+    border-color: #d9d9d9;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+}
+
+.ant-ywh-button-type-primary {
+    background-color: @ant-primary-color;
+    color: #FFF;
+}
+
+.ant-ywh-button-type-primary:hover {
+    color: #FFF;
+    background-color: @ant-primary-hover-color;
+}
+
+.ant-ywh-button-type-dashed {
+    border-color: #d9d9d9;
+    border-style: dashed;
+}
+
+
+.ant-ywh-button-type-text:hover {
+    border-color: transparent;
+    color: rgba(0, 0, 0, 0.88);
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.ant-ywh-button-type-link {
+    color: @ant-primary-color;
+    border-color: transparent;
+}
+
+.ant-ywh-button-type-link:hover {
+    color: @ant-primary-hover-color;
+    border-color: transparent;
+}
