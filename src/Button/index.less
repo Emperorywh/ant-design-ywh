@@ -12,7 +12,7 @@
     transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.ant-ywh-button >.anticon + span {
+.ant-ywh-button>.anticon+span {
     margin-left: 8px;
 }
 
@@ -20,6 +20,8 @@
     color: @ant-primary-color;
     border-color: @ant-primary-hover-color;
 }
+
+// Button type
 
 .ant-ywh-button-type-default {
     border-color: #d9d9d9;
@@ -29,6 +31,7 @@
 .ant-ywh-button-type-primary {
     background-color: @ant-primary-color;
     color: #FFF;
+    box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
 }
 
 .ant-ywh-button-type-primary:hover {
@@ -56,4 +59,111 @@
 .ant-ywh-button-type-link:hover {
     color: @ant-primary-hover-color;
     border-color: transparent;
+}
+
+// Button shape
+.ant-ywh-button-shape-circle {
+    min-width: 32px;
+    border-radius: 50%;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+
+// Button block
+.ant-ywh-button-block {
+    width: 100%;
+}
+
+// Button size
+.ant-ywh-button-size-small {
+    font-size: 14px;
+    height: 24px;
+    padding: 0px 7px;
+    border-radius: 4px;
+}
+
+.ant-ywh-button-size-large {
+    font-size: 16px;
+    height: 40px;
+    padding: 6.428571428571429px 15px;
+    border-radius: 8px;
+}
+
+// Button danger
+.ant-ywh-button-danger {
+    color: @ant-danger-color;
+}
+
+.ant-ywh-button-danger:hover {
+    color: @ant-danger-hover-color;
+}
+
+.ant-ywh-button-type-primary.ant-ywh-button-danger,
+.ant-ywh-button-type-default.ant-ywh-button-danger {
+    border-color: @ant-danger-color;
+}
+
+.ant-ywh-button-type-primary:hover.ant-ywh-button-danger,
+.ant-ywh-button-type-default:hover.ant-ywh-button-danger {
+    border-color: @ant-danger-hover-color;
+}
+
+.ant-ywh-button-type-primary.ant-ywh-button-danger {
+    background-color: @ant-danger-color;
+    color: #FFF;
+}
+
+.ant-ywh-button-type-primary:hover.ant-ywh-button-danger {
+    background-color: @ant-danger-hover-color;
+    color: #FFF;
+}
+
+.ant-ywh-button-type-text:hover.ant-ywh-button-danger {
+    background-color: @ant-danger-bacg-color;
+    color: @ant-danger-hover-color;
+}
+
+.ant-ywh-button-type-dashed.ant-ywh-button-danger {
+    border-color: @ant-danger-color;
+}
+
+.ant-ywh-button-type-dashed:hover.ant-ywh-button-danger {
+    border-color: @ant-danger-hover-color;
+}
+
+// Button disabled
+.ant-ywh-button-disabled {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.ant-ywh-button-type-primary.ant-ywh-button-disabled,
+.ant-ywh-button-type-default.ant-ywh-button-disabled, 
+.ant-ywh-button-type-dashed.ant-ywh-button-disabled {
+    cursor: not-allowed;
+    border-color: #d9d9d9;
+    background-color: rgba(0, 0, 0, 0.04);
+    box-shadow: none;
+}
+
+.ant-ywh-button-type-primary:hover.ant-ywh-button-disabled,
+.ant-ywh-button-type-default:hover.ant-ywh-button-disabled, 
+.ant-ywh-button-type-dashed:hover.ant-ywh-button-disabled {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.ant-ywh-button-type-text.ant-ywh-button-disabled,
+.ant-ywh-button-type-link.ant-ywh-button-disabled {
+    cursor: not-allowed;
+}
+
+.ant-ywh-button-type-text:hover.ant-ywh-button-disabled,
+.ant-ywh-button-type-link:hover.ant-ywh-button-disabled {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+// Button loading
+.ant-ywh-button-loading {
+    opacity: 0.65;
+    cursor: default;
 }
