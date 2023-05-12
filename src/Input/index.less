@@ -1,0 +1,128 @@
+@import url("../common.less");
+
+@input-box-heitht-large: 40px;
+@input-box-heitht-middle: 32px;
+@input-box-heitht-small: 24px;
+
+.ant-ywh-input {
+    outline: none;
+    width: 100%;
+    height: @input-box-heitht-middle;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 4px 11px;
+    font-size: 14px;
+    transition: all 0.2s;
+    color: rgba(0, 0, 0, 0.88);
+
+    &:hover {
+        border-color: @ant-primary-hover-color;
+    }
+
+    &:focus {
+        border-color: @ant-primary-hover-color;
+    }
+}
+
+.ant-ywh-input-size-large {
+    height: @input-box-heitht-large;
+}
+
+.ant-ywh-input-size-small {
+    height: @input-box-heitht-small;
+}
+
+.ant-ywh-input-group {
+    display: flex;
+    align-items: center;
+    height: @input-box-heitht-middle;
+    box-sizing: border-box;
+
+    .ant-ywh-input-addon {
+        flex: 0 1 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 11px;
+        font-size: 14px;
+        background-color: rgba(0, 0, 0, 0.02);
+        height: 100%;
+        border: 1px solid #d9d9d9;
+        border-radius: 6px;
+    }
+
+    .ant-ywh-input-addon-before {
+        border-right: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .ant-ywh-input-addon-after {
+        border-left: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .ant-ywh-input-wrapper {
+        flex: 1 0 auto;
+        display: flex;
+        align-items: center;
+        border: 1px solid #d9d9d9;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 7px 11px;
+        transition: all 0.2s;
+        border-radius: 6px;
+
+        &:hover {
+            border-color: @ant-primary-hover-color;
+        }
+
+        .ant-ywh-input-prefix {
+            margin-right: 4px;
+        }
+
+        .ant-ywh-input {
+            border: none;
+            padding: 0;
+            height: 22px;
+
+            &:hover {
+                border-color: transparent;
+            }
+        }
+
+        &:not(:first-child):not(:last-child) {
+            border-radius: 0;
+        }
+
+        &:first-child:not(:only-child) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        &:last-child:not(:only-child) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
+
+.ant-ywh-input-group.ant-ywh-input-group-size-large {
+    font-size: 16px;
+    height: @input-box-heitht-large;
+
+    .ant-ywh-input {
+        height: 24px;
+    }
+}
+
+.ant-ywh-input-group.ant-ywh-input-group-size-small {
+    height: @input-box-heitht-small;
+
+    .ant-ywh-input {
+        height: 22px;
+    }
+}
