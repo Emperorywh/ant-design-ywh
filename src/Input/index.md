@@ -22,10 +22,11 @@ demo:
 <code src="./demo/basic.tsx">基本使用</code>
 <code src="./demo/size.tsx">三种大小</code>
 <code src="./demo/addon.tsx">前置/后置标签</code>
+<code src="./demo/search-input.tsx">搜索框</code>
+
 <!-- 
 <code src="./demo/compact-style.tsx">紧凑模式</code>
 <code src="./demo/group.tsx" debug>输入框组合</code>
-<code src="./demo/search-input.tsx">搜索框</code>
 <code src="./demo/search-input-loading.tsx">搜索框 loading</code>
 <code src="./demo/textarea.tsx">文本域</code>
 <code src="./demo/autosize-textarea.tsx">适应文本高度的文本域</code>

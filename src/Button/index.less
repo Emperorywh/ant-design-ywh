@@ -28,6 +28,12 @@
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
 }
 
+.ant-ywh-button-type-default:active {
+    color: @ant-primary-active-color;
+    border-color: @ant-primary-active-color;
+    box-shadow: 0 2px 0 rgba(0,0,0,.02);
+}
+
 .ant-ywh-button-type-primary {
     background-color: @ant-primary-color;
     color: #FFF;
@@ -37,6 +43,11 @@
 .ant-ywh-button-type-primary:hover {
     color: #FFF;
     background-color: @ant-primary-hover-color;
+    box-shadow: 0 2px 0 rgba(5,145,255,.1);
+}
+
+.ant-ywh-button-type-primary:active {
+    background-color: @ant-primary-active-color;
 }
 
 .ant-ywh-button-type-dashed {
@@ -116,6 +127,10 @@
 .ant-ywh-button-type-primary:hover.ant-ywh-button-danger {
     background-color: @ant-danger-hover-color;
     color: #FFF;
+}
+
+.ant-ywh-button-type-primary:active.ant-ywh-button-danger {
+    background-color: @ant-danger-active-color;
 }
 
 .ant-ywh-button-type-text:hover.ant-ywh-button-danger {

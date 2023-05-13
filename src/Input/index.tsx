@@ -14,15 +14,17 @@ export interface InputProps {
     maxLength?: number,
     showCount?: boolean,
     status?: 'error' | 'warning',
-    styles?: React.CSSProperties,
+    style?: React.CSSProperties,
     prefix?: ReactNode,
     placeholder?: string,
     size?: 'large' | 'middle' | 'small',
     suffix?: ReactNode,
     type?: string,
     value?: string,
+    search?: ReactNode,
     onChange?: ChangeEventHandler<HTMLInputElement>;
     onPressEnter?: KeyboardEventHandler<HTMLInputElement>;
+    onSearch?: (value: string) => void;
 }
 
 //当前组件的类名前缀
@@ -75,6 +77,9 @@ const InputWrapper: React.FC<InputProps> = React.memo((props) => {
         {
             props.addonAfter && <span className={`${dividerPrefixCls}-addon ${dividerPrefixCls}-addon-after`}>{props.addonAfter}</span>
         }
+        {
+            props.search && <span className={`${dividerPrefixCls}-addon ${dividerPrefixCls}-addon-after ${dividerPrefixCls}-addon-search`}>{props.search}</span>
+        }
     </span>
 });
 
@@ -88,10 +93,11 @@ const Input: React.FC<InputProps> = React.memo((props) => {
         prefix,
         suffix,
         addonBefore,
-        addonAfter
+        addonAfter,
+        search
     } = props;
 
-    if (prefix || suffix || addonBefore || addonAfter) {
+    if (prefix || suffix || addonBefore || addonAfter || search) {
         return <InputWrapper {...props}></InputWrapper>
     }
 
